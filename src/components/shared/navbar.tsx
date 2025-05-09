@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-// import searchbar
+import Logo from "./logo-app";
+import Searchbar from "./searchbar";
 import { ModeToggle } from "./mode-toggle";
-import AppNameAndLogo from "./logo-app";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   return (
     <div className="poppins p-6 flex justify-between items-center">
       <div className="flex items-center gap-16">
-        <AppNameAndLogo />
-        {/** Searchbar */}
+        <Logo />
+        <Searchbar /> 
       </div>
       <div className="flex items-center gap-5">
         <ModeToggle />
